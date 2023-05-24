@@ -11,17 +11,22 @@ def main():
     # Graphviz graph
     g = graphviz.Digraph('G', filename='state_machine.gv')
     
+    # Start node
     g.edge("START", "Looking right")
+    
+    # Idle nodes and transitions to moving with MOV
     g.edge("Looking right", "Moving right", "MOV")
     g.edge("Looking left", "Moving left", "MOV")
     g.edge("Looking up", "Moving up", "MOV")
     g.edge("Looking down", "Moving down", "MOV")
     
+    # Moving nodes and immediate transition back to idle
     g.edge("Moving right", "Looking right")
     g.edge("Moving left", "Looking left")
     g.edge("Moving up", "Looking up")
     g.edge("Moving down", "Looking down")
 
+    # Idle transitions with TURN to different directions using angles
     g.edge("Looking right", "Looking left", "TURN 180")
     g.edge("Looking left", "Looking right", "TURN 180")
     g.edge("Looking up", "Looking down", "TURN 180")
