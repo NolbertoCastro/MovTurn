@@ -90,5 +90,5 @@ def executeActionsFromFile(file_path):
 
 def main():
   printMap()
-  executeActionsFromFile('instructions.txt')
+  executeActionsFromFile('instructions.asm')
 main()

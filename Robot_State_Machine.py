@@ -25,6 +25,12 @@ def main():
     g.edge("Moving left", "Looking left")
     g.edge("Moving up", "Looking up")
     g.edge("Moving down", "Looking down")
+    
+    # Halt
+    g.edge("Moving right", "Halt", "error")
+    g.edge("Moving left", "Halt", "error")
+    g.edge("Moving up", "Halt", "error")
+    g.edge("Moving down", "Halt", "error")
 
     # Idle transitions with TURN to different directions using angles
     g.edge("Looking right", "Looking left", "TURN 180")

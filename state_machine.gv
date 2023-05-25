@@ -8,6 +8,10 @@ digraph G {
 	"Moving left" -> "Looking left"
 	"Moving up" -> "Looking up"
 	"Moving down" -> "Looking down"
+	"Moving right" -> Halt [label=error]
+	"Moving left" -> Halt [label=error]
+	"Moving up" -> Halt [label=error]
+	"Moving down" -> Halt [label=error]
 	"Looking right" -> "Looking left" [label="TURN 180"]
 	"Looking left" -> "Looking right" [label="TURN 180"]
 	"Looking up" -> "Looking down" [label="TURN 180"]
