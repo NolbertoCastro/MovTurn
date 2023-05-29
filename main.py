@@ -1,3 +1,5 @@
+import sys
+
 x = 0
 y = 0
 
@@ -68,12 +70,12 @@ def Mov(steps):
   global Continue
   if Xdir == True:
     if (x + (direction * steps)) > 9:
-      print("mamaste")
+      sys.exit("Invalid Operation, out of range")
     else:
       x = x + (direction * steps)
   else:
-    if (y + (direction * steps)) > 9:
-      print("mamaste")
+    if (y + (direction * steps)) > 9:  
+      sys.exit("Invalid Operation, out of range")
     else:
       y = y + (direction * steps)
   cleanMap()
