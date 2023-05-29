@@ -84,11 +84,16 @@ def Mov(steps):
 def executeActionsFromFile(file_path):
     with open(file_path, 'r') as file:
         for line in file:
-            action, value = line.strip().split(', ')
-            if action == 'MOV':
-                Mov(int(value))
-            elif action == 'TURN':
-                Turn(int(value))
+            try:
+                action, value = line.strip().split(', ')
+                if action == 'MOV':
+                    Mov(int(value))
+                elif action == 'TURN':
+                    Turn(int(value))
+                else:
+                    sys.exit("Invalid Operation, unrecognized")
+            except ValueError:
+                print("Invalid Operation, not enough values")
 
 def main():
   printMap()
