@@ -72,3 +72,10 @@ MOV, 5
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
 ```
+
+
+# Generador de LEX para detección de tokens validos
+
+
+
+# CFG para lenguaje y binario en YACC/LEX
