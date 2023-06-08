@@ -4,8 +4,6 @@ Robot, please advance 2 blocks forward.
 
 Robot, please shift forward by 2 blocks.
 
-Robot, please travel in the forward direction for 2 blocks.
-
 Robot, please proceed by 2 blocks.
 
 Robot, please move forward for a distance of 2 blocks.
@@ -13,8 +11,6 @@ Robot, please move forward for a distance of 2 blocks.
 Robot, please go ahead by 2 blocks.
 
 Robot, please march forward by 2 blocks.
-
-Robot, please make a displacement of 2 blocks in the forward direction.
 
 Robot, please propel forward by 2 blocks.
 
