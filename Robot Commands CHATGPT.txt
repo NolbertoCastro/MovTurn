@@ -22,7 +22,7 @@ Robot, please shift forward by 3 blocks, rotate 90 degrees, and then travel 2 bl
 
 Robot, please travel 3 blocks forward, turn 90 degrees, and then move ahead by 2 blocks.
 
-Robot, please proceed for 3 blocks, make a 90-degree turn, and then shift forward by 2 blocks.
+Robot, please proceed by 3 blocks, make a 90 degree turn, and then shift forward by 2 blocks.
 
 Robot, please move ahead by 3 blocks, turn 90 degrees, and then proceed for 2 blocks.
 
