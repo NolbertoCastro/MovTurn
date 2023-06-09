@@ -124,19 +124,19 @@ The LEX must detect any of these words correctly, but it won't be able to detect
 
 ### ACCEPTED
 
-Robot, please
-move 3 blocks
-turn 90 degrees
-make a robot.
-. and then, please robot move
+- Robot, please
+- move 3 blocks
+- turn 90 degrees
+- make a robot.
+- . and then, please robot move
 
 ### REJECTED
 
-asldkaskdljsadklj
-kjweoiuew91239823198qwioeuqweoiuwqe
-make me a sandwich
-fly to the moon
-turn on the lights
+- asldkaskdljsadklj
+- kjweoiuew91239823198qwioeuqweoiuwqe
+- make me a sandwich
+- fly to the moon
+- turn on the lights
 
 
 # CFG and YACC/LEX 
