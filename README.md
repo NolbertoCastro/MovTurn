@@ -14,7 +14,7 @@ Jesús Enrique Díaz Bernal Robinson Bours | A00227255
 
 ## Automata
 
-![CPU Automata](https://drive.google.com/file/d/1x10K0VXDeNBCRti06Zl5u7C-kJ9hf1Tl/view?usp=sharing)
+![CPU Automata](https://raw.githubusercontent.com/NolbertoCastro/MovTurn/main/cpu/Automata.png)
 
 ## **Language**
 
