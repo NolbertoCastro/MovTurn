@@ -14,7 +14,7 @@ Jesús Enrique Díaz Bernal Robinson Bours | A00227255
 
 ## Automata
 
-![CPU Automata]([https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Logo_del_ITESM.svg/320px-Logo_del_ITESM.svg.png](https://drive.google.com/file/d/1x10K0VXDeNBCRti06Zl5u7C-kJ9hf1Tl/view?usp=sharing))
+![CPU Automata](https://drive.google.com/file/d/1x10K0VXDeNBCRti06Zl5u7C-kJ9hf1Tl/view?usp=sharing)
 
 ## **Language**
 
