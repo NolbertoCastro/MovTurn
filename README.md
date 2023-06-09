@@ -4,25 +4,29 @@
 
 ![tec de monterrey Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Logo_del_ITESM.svg/320px-Logo_del_ITESM.svg.png)
 
-### Participantes del Equipo:
+### Team:
 
 Nolberto Castro Sánchez | A01641501
 
 Jesús Enrique Díaz Bernal Robinson Bours | A00227255
 
-# Automata de CPU para robot basico 🤖
+# CPU Automata for basic robot 🤖
 
-## **Lenguaje**
+## Automata
+
+![CPU Automata]([https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Logo_del_ITESM.svg/320px-Logo_del_ITESM.svg.png](https://drive.google.com/file/d/1x10K0VXDeNBCRti06Zl5u7C-kJ9hf1Tl/view?usp=sharing))
+
+## **Language**
 
 Python
 
-## Comandos
+## Instructions
 
-**MOV** = Moverse hacia delante dependiendo el ángulo en el cual se encuentra el robot.
+**MOV** = Move in the directions the robot is facing.
 
-**TURN** = Gira la N cantidad de Grados que el usuario quiera que el robot gire.
+**TURN** = Turns 90, 180, 270 or 360 degrees to the left.
 
-## Ejemplo
+## Example
 
 ```
 MOV, 4
@@ -32,7 +36,7 @@ MOV, 5
 
 ## Output:
 
-### Punto Inicial:
+### Starting Point:
 
 ```
 ['XX', '--', '--', '--', '--', '--', '--', '--', '--', '--']
@@ -47,7 +51,7 @@ MOV, 5
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
 ```
 
-### Primer movimiento:
+### First Movement:
 
 ```
 ['--', '--', '--', '--', 'XX', '--', '--', '--', '--', '--']
@@ -62,7 +66,7 @@ MOV, 5
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
 ```
 
-### Segundo Movimiento junto con rotación:
+### Rotation and Second Movement:
 
 ```
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
@@ -78,8 +82,7 @@ MOV, 5
 ```
 
 
-# Generador de LEX para detección de tokens validos
+# LEX generator with valid tokens 
 
 
-
-# CFG para lenguaje y binario en YACC/LEX
+# CFG and YACC/LEX 
