@@ -208,10 +208,10 @@ CONNECTOR: COMMA AND | COMMA THEN | COMMA AND THEN | COMMA | AND THEN
 	
 ## Inputs
 Some of the insputs that must be accepted are the following:
-	- Robot, please move ahead by 2 blocks.
-	- Robot, please advance 3 blocks forward
-	- Robot, please advance by 3 blocks, make a 90 degree turn, and then proceed forward by 2 blocks.
+	* Robot, please move ahead by 2 blocks.
+	* Robot, please advance 3 blocks forward
+	* Robot, please advance by 3 blocks, make a 90 degree turn, and then proceed forward by 2 blocks.
 Some of the inputs that must be rejected are the following:
-	- Robot move 30 blocks
-	- Robot, please fly 100 blocks to Europe
-	- Robot, please forward 3 blocks turn . move
+	* Robot move 30 blocks
+	* Robot, please fly 100 blocks to Europe
+	* Robot, please forward 3 blocks turn . move
