@@ -1,5 +1,3 @@
-import sys
-
 x = 0
 y = 0
 
@@ -70,36 +68,46 @@ def Mov(steps):
   global Continue
   if Xdir == True:
     if (x + (direction * steps)) > 9:
-      sys.exit("Invalid Operation, out of range")
+      print("Invalid Operation, out of range")
+      Continue = False
+      return
     elif (direction == -1 and (x + (direction * steps)) < 0):
-      sys.exit("Invalid Operation, out of range")
+      print("Invalid Operation, out of range")
+      Continue = False
+      return
     else:
       x = x + (direction * steps)
   else:
     if (y + (direction * steps)) > 9:  
-      sys.exit("Invalid Operation, out of range")
+      print("Invalid Operation, out of range")
+      Continue = False
+      return
     elif (direction == -1 and (y + (direction * steps)) < 0):
-      sys.exit("Invalid Operation, out of range")
+      print("Invalid Operation, out of range")
+      Continue = False
+      return
     else:
       y = y + (direction * steps)
   cleanMap()
   printMap()
 
 def executeActionsFromFile(file_path):
+    global Continue
     with open(file_path, 'r') as file:
         for line in file:
-            try:
-                action, value = line.strip().split(', ')
-                if action == 'MOV':
-                    Mov(int(value))
-                elif action == 'TURN':
-                    Turn(int(value))
-                else:
-                    sys.exit("Invalid Operation, unrecognized")
-            except ValueError:
-                print("Invalid Operation, not enough values")
+            if (Continue):
+              try:
+                  action, value = line.strip().split(', ')
+                  if action == 'MOV':
+                      Mov(int(value))
+                  elif action == 'TURN':
+                      Turn(int(value))
+                  else:
+                      print("Invalid Operation, unrecognized")
+              except ValueError:
+                  print("Invalid Operation, not enough values")
 
 def main():
   printMap()
-  executeActionsFromFile("../compiler/instructions.asm")
+  executeActionsFromFile("./instructions.asm")
 main()
