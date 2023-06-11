@@ -109,5 +109,5 @@ def executeActionsFromFile(file_path):
 
 def main():
   printMap()
-  executeActionsFromFile("./instructions.asm")
+  executeActionsFromFile("../compiler/instructions.asm")
 main()

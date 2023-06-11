@@ -1,5 +1,3 @@
-import sys
-
 def simulate_robot(input_instructions_list):
     input_instructions = []
     with open(input_instructions_list, 'r') as file:
@@ -75,33 +73,43 @@ def simulate_robot(input_instructions_list):
         nonlocal Continue
         if Xdir == True:
             if (x + (direction * steps)) > 9:
-                sys.exit("Invalid Operation, out of range")
+                print("Invalid Operation, out of range")
+                Continue = False
+                return
             elif (direction == -1 and (x + (direction * steps)) < 0):
-                sys.exit("Invalid Operation, out of range")
+                print("Invalid Operation, out of range")
+                Continue = False
+                return
             else:
                 x = x + (direction * steps)
         else:
             if (y + (direction * steps)) > 9:  
-                sys.exit("Invalid Operation, out of range")
+                print("Invalid Operation, out of range")
+                Continue = False
+                return
             elif (direction == -1 and (y + (direction * steps)) < 0):
-                sys.exit("Invalid Operation, out of range")
+                print("Invalid Operation, out of range")
+                Continue = False
+                return
             else:
                 y = y + (direction * steps)
         cleanMap()
         printMap()
 
     def executeActions(input_instructions):
+        global Continue
         for line in input_instructions:
-            try:
-                action, value = line.strip().split(', ')
-                if action == 'MOV':
-                    Mov(int(value))
-                elif action == 'TURN':
-                    Turn(int(value))
-                else:
-                    sys.exit("Invalid Operation, unrecognized")
-            except ValueError:
-                print("Invalid Operation, not enough values")
+            if (Continue):
+                try:
+                    action, value = line.strip().split(', ')
+                    if action == 'MOV':
+                        Mov(int(value))
+                    elif action == 'TURN':
+                        Turn(int(value))
+                    else:
+                        print("Invalid Operation, unrecognized")
+                except ValueError:
+                    print("Invalid Operation, not enough values")
 
     printMap()
     executeActions(input_instructions)
