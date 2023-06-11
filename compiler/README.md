@@ -56,11 +56,19 @@ The LEX must detect any of these words correctly, but it won't be able to detect
 
 ### ACCEPTED
 
-- Robot, please
-- move 3 blocks
-- turn 90 degrees
-- make a robot.
-- . and then, please robot move
+- Robot
+- , 
+- please
+- move 
+- 3 
+- blocks
+- turn 
+- 90 
+- degrees
+- make 
+- a 
+- robot
+- .
 
 ### REJECTED
 
