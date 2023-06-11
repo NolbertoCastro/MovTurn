@@ -1,6 +1,10 @@
 import sys
 
 def simulate_robot(input_instructions_list):
+    input_instructions = []
+    with open(input_instructions_list, 'r') as file:
+        for line in file:
+            input_instructions.append(line)
     x = 0
     y = 0
 
@@ -100,10 +104,10 @@ def simulate_robot(input_instructions_list):
                 print("Invalid Operation, not enough values")
 
     printMap()
-    executeActions(input_instructions_list)
+    executeActions(input_instructions)
 
 def main():
-    simulate_robot([])  # Pass an empty list for now
+    simulate_robot("input.txt")
 
 if __name__ == "__main__":
     main()
