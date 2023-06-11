@@ -97,7 +97,6 @@ def simulate_robot(input_instructions_list):
         printMap()
 
     def executeActions(input_instructions):
-        global Continue
         for line in input_instructions:
             if (Continue):
                 try:

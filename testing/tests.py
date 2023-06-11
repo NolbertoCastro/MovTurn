@@ -158,14 +158,14 @@ División------------------------
         stdout, stderr = process.communicate()
         # Wait for the subprocess to finish
         process.wait()
-            
+                    
         if stdout.strip() == expected_output_list[i].strip():
             print(f"Test {i+1} passed")
         else:
             print(f"Test {i+1} failed")
     
         # Wait for 1 second before running the next test
-        sleep(1)
+        sleep(.5)
         i+=1
 
 if __name__ == "__main__":
