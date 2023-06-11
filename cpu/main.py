@@ -71,10 +71,14 @@ def Mov(steps):
   if Xdir == True:
     if (x + (direction * steps)) > 9:
       sys.exit("Invalid Operation, out of range")
+    elif (direction == -1 and (x + (direction * steps)) < 0):
+      sys.exit("Invalid Operation, out of range")
     else:
       x = x + (direction * steps)
   else:
     if (y + (direction * steps)) > 9:  
+      sys.exit("Invalid Operation, out of range")
+    elif (direction == -1 and (y + (direction * steps)) < 0):
       sys.exit("Invalid Operation, out of range")
     else:
       y = y + (direction * steps)

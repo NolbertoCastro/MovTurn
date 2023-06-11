@@ -1,5 +1,0 @@
-MOV, 2
-MOV, 2
-MOV, 2
-TURN, 90
-MOV, 2
