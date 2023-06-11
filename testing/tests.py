@@ -98,7 +98,6 @@ División------------------------
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
 ['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
 Invalid Operation, out of range
-repl process died unexpectedly: exit status 1
 ""","""
 División------------------------
 ['XX', '--', '--', '--', '--', '--', '--', '--', '--', '--']
@@ -148,24 +147,26 @@ División------------------------
 ]
 
     # Write the input instructions to a file
-    with open("input.txt", "w") as f:
-        for i, instructions in enumerate(input_instructions_list):
-            f.write(instructions)
-
-    # Run the program with the input instructions and capture the output
-    process = subprocess.Popen(["python", "main.py"], 
-    stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    stdout, stderr = process.communicate()
-    # Wait for the subprocess to finish
-    process.wait()
+    i = 0
+    for k, instructions in enumerate(input_instructions_list):
+        with open("input.txt", "w") as f:
+                f.write(instructions)
     
-    if stdout.strip() == expected_output_list[i].strip():
-        print(f"Test {i+1} passed")
-    else:
-        print(f"Test {i+1} failed")
-
-    # Wait for 1 second before running the next test
-    sleep(1)
+        # Run the program with the input instructions and capture the output
+        process = subprocess.Popen(["python", "main.py"], 
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        stdout, stderr = process.communicate()
+        # Wait for the subprocess to finish
+        process.wait()
+            
+        if stdout.strip() == expected_output_list[i].strip():
+            print(f"Test {i+1} passed")
+        else:
+            print(f"Test {i+1} failed")
+    
+        # Wait for 1 second before running the next test
+        sleep(1)
+        i+=1
 
 if __name__ == "__main__":
     main()

@@ -1,1 +1,5 @@
-MOV, 3
+MOV, 9
+TURN, 270
+MOV, 4
+TURN, 180
+MOV, 2
