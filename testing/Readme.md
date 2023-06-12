@@ -2,6 +2,37 @@
 
 # **CPU Automata for basic robot**
 
-For the testing of the CPU automata we created a file called `test.py` which includes the commands and expected outputs of the different tests. In this case it creates a file called `input.txt` that is used by the `main.py` file to move the robot, the `test.py` file gets the console printed output and compares it with the expected output to know if the test passed or failed.
+For the testing of the CPU automata we created a file called `test.py` which includes the commands and expected outputs of the different test. In this case it creates a file called input.txt that is used by the `main.py` file to move the robot, the `test.py` file gets the console printed output and compares it with the expected output to know if the test passed or failed.
 
-In this case we did 4 test cases, 3 in which the robot doesn’t exit the map and one in which it passes the limit, all of these cases passed the test successfully.
+In this case we did 4 test cases, 3 in which the robot doesn’t exit the map and one in which it passes the limit, all of this cases passed the test successfully.
+
+## Example of test:
+
+### Input.txt
+
+```
+MOV, 11
+```
+
+### Expected output:
+
+```
+División------------------------
+['XX', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+['--', '--', '--', '--', '--', '--', '--', '--', '--', '--']
+Invalid Operation, out of range
+```
+
+### Result
+
+Test 3 passed
+
+![test results.jpeg](Unit%20test%2015ef5dcebb804171916d91b588416473/test_results.jpeg)
