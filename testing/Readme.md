@@ -35,4 +35,4 @@ Invalid Operation, out of range
 
 Test 3 passed
 
-![test results.jpeg]("./screenshots/test results.jpeg")
+![test results.jpeg](https://github.com/NolbertoCastro/MovTurn/blob/main/testing/screenshots/test%20results.jpeg)
