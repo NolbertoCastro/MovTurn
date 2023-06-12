@@ -1,0 +1,13 @@
+Robot, please move ahead by 2 blocks.
+Robot, please advance 3 blocks forward
+Robot, please advance by 3 blocks, make a 180 degree turn, and then proceed forward by 2 blocks.
+Robot, please shift forward by 4 blocks.
+Robot, please shift forward by 2 blocks, rotate 90 degrees, and then travel 2 blocks.
+Robot, please proceed by 2 blocks.
+Robot, please move forward for a distance of 3 blocks.
+Robot, please turn 90 degrees
+Robot, please go ahead by 2 blocks.
+Robot, please march forward by 3 blocks.
+Robot, please turn 90 degrees
+Robot, please move ahead by 5 blocks and then turn 90 degrees.
+Robot, please propel forward by 4 blocks.

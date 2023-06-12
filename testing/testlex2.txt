@@ -1,0 +1,2 @@
+Robot, please move ahead by 2 blocks.
+Robot, please advance 3 bloc
