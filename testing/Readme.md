@@ -31,8 +31,33 @@ División------------------------
 Invalid Operation, out of range
 ```
 
-### Result
+## Result
 
 Test 3 passed
 
+# **LEX and YACC**
+
+For the testing of the CFG, a bash file was created. It runs the lex and yacc with different file inputs and checks if the language passed or if there was a syntax error. 4 tests were created, in which 2 are accepted and 2 are rejected. All tests must pass.
+
+## Example of test:
+
+### testlex1.txt
+
+```
+Robot, please move ahead by 2 blocks.
+Robot, please advance 3 blocks forward
+```
+
+### Expected output:
+
+```
+```
+
+## Result
+
+Test 1 passed
+
+
+
 ![test results.jpeg](https://github.com/NolbertoCastro/MovTurn/blob/main/testing/screenshots/test%20results.jpeg)
+
