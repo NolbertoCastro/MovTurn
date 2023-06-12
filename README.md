@@ -231,6 +231,10 @@ Some of the inputs that must be rejected are the following:
 * Robot, please forward 3 blocks turn . move
 
 # Unit test
+	
+# Video link
+
+https://youtu.be/tEuIHIFSHGM
 
 # **CPU Automata for basic robot**
 
